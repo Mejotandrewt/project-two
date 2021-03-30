@@ -8,7 +8,7 @@ body {
   height: 64px;
   justify-content: space-between;
   align-items: center;
-  background: gray;
+  background: black;
 }
 
 .primary-nav .logo {
@@ -32,19 +32,34 @@ body {
 /* Mobile Rules*/
 @media (max-width: 767px) {
   .primary-nav ul {
+    transition: transform 300ms;
     top: 64px;
     width: 100%;
     position: absolute;
-    background-color: black;
-    transform: translateY(-100vh);
+    background-color: gray;
+    transform: translateX(-100vw);
   }
   .primary-nav ul.active {
-    transform: translateY(0);
+    transform: translateX(0);
   }
   .primary-nav a {
     color: orange;
   }
   .primary-nav ul li {
     margin: 10px;
+  }
+}
+
+/*Desktop Rules*/
+@media (min-width: 768px) {
+  .toggle {
+    display: none;
+  }
+  .primary-nav ul {
+    display: flex;
+    margin: 10px;
+  }
+  .primary-nav ul li {
+    padding-left: 10px;
   }
 }
