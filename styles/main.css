@@ -12,11 +12,16 @@ body {
 }
 
 .primary-nav .logo {
-  margin: 10px;
+  padding-left: 10px;
+  height: 48px;
+  width: auto;
 }
 
 .primary-nav .toggle {
   margin: 10px;
+  color: orange;
+  background-color: gray;
+  border: orange;
 }
 
 .primary-nav ul {
@@ -27,6 +32,7 @@ body {
 
 .primary-nav a {
   text-decoration: none;
+  color: orange;
 }
 
 /* Mobile Rules*/
