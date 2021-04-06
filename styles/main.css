@@ -1,14 +1,73 @@
 body {
   margin: 0;
+  color: white;
+  background-color: black;
+  font-size: 16;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sections img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 3px solid orange;
+}
+
+.mx-8 {
+  margin: 0 15px;
+}
+
+.firstpic {
+  height: 100vh;
+  width: 50vw;
+  padding-bottom: 100px;
+}
+
+h1 {
+  font-size: 30;
+  font-family: serif;
+  margin: 0;
+  color: orange;
+}
+h2 {
+  font-family: serif;
+  font-size: 20;
+  margin: 0;
+  color: orange;
+}
+
+h3 {
+  font-family: serif;
+  font-size: 20;
+  margin: 0;
+  color: orange;
+  text-align: center;
+  padding-bottom: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: orange;
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 64px;
+  border-top: 5px solid orange;
+  background-color: black;
+  font-size: 10;
 }
 
 .primary-nav {
   position: relative;
   display: flex;
   height: 64px;
+  width: 100vw;
   justify-content: space-between;
   align-items: center;
   background: black;
+  border-bottom: 3px solid orange;
 }
 
 .primary-nav .logo {
@@ -22,6 +81,7 @@ body {
   color: orange;
   background-color: gray;
   border: orange;
+  border-radius: 10px;
 }
 
 .primary-nav ul {
@@ -54,6 +114,23 @@ body {
   .primary-nav ul li {
     margin: 10px;
   }
+
+  .sections {
+    flex-direction: column;
+  }
+
+  .hv-center {
+    display: flex;
+    justify-content: center;
+  }
+
+  .firstpic {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+  }
 }
 
 /*Desktop Rules*/
@@ -64,8 +141,111 @@ body {
   .primary-nav ul {
     display: flex;
     margin: 10px;
+    padding-right: 20px;
   }
   .primary-nav ul li {
     padding-left: 10px;
   }
+
+  .header {
+    display: flex;
+  }
+
+  .header > * {
+    flex: 1 0;
+  }
+
+  .hv-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sections {
+    padding-bottom: 36px;
+  }
+  .max-width-400 {
+    max-width: 400px;
+  }
+
+  .sections {
+    display: flex;
+  }
+
+  .sections > div:first-child {
+    margin-left: 0;
+  }
+
+  .sections > div:last-child {
+    margin-right: 0;
+  }
+
+  .sections > div {
+    flex: 1 0;
+    margin: 0 10px;
+  }
+
+  .firstpic {
+    width: 50vw;
+  }
+}
+
+.mw-med {
+  max-width: 720px;
+  margin: 0 auto;
+  border: 3px solid orange;
+}
+
+.aspect-ratio {
+  position: relative;
+  background: black;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.zhou img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 3px solid orange;
+}
+.zhou p {
+  max-width: 100%;
+  font-size: 10px;
+  color: orange;
+}
+
+.zhou {
+  margin: 10px;
+}
+
+.gridarticle {
+  margin: 48px;
+  background-color: grey;
+  border: 3px solid orange;
+}
+
+.gridtitle {
+  margin: 48px;
+  padding-top: 36px;
+}
+
+/**.faq {
+  transition: transform 300ms;
+  top: 64px;
+  width: 100%;
+  position: absolute;
+  background-color: gray;
+  transform: translateX(-100vw);
+}
+.faw p.active {
+  transform: translateX(0);
 }
