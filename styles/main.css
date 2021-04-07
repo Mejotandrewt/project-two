@@ -131,6 +131,27 @@ a {
     width: 100vw;
     height: auto;
   }
+  h1 {
+    font-size: 30;
+    font-family: serif;
+    margin: 0;
+    color: orange;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  h2 {
+    font-family: serif;
+    font-size: 20;
+    margin: 0;
+    color: orange;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  p {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 /*Desktop Rules*/
@@ -231,7 +252,10 @@ iframe {
   margin: 48px;
   background-color: grey;
   border: 3px solid orange;
-  max-width: 600px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .gridtitle {
