@@ -238,14 +238,51 @@ iframe {
   padding-top: 36px;
 }
 
-/**.faq {
-  transition: transform 300ms;
-  top: 64px;
-  width: 100%;
-  position: absolute;
-  background-color: gray;
-  transform: translateX(-100vw);
+.coalarticle {
+  margin: 48px;
 }
-.faw p.active {
-  transform: translateX(0);
+
+/** Here is the link where I got the core code for these accordion sections https://www.w3schools.com/howto/howto_js_accordion.asp. 
+I did also makes some aesthic changes to the code. Here in the CSS section there are several sections, the first is for the accordian 
+section aka where the question goes, the next is the hover state of the accordian, and then the pannel which is the drop down inside 
+of the accordian aka the answer to the question, the last two sections are adding the plus and minus signs conntent. On this css page 
+the main things that this page is doing is adding the different kinds of styles and placements of the content.
+ **/
+
+.accordion {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: 1px solid orange;
+  outline: none;
+  transition: 0.4s;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: gray;
+  display: none;
+  overflow: hidden;
+}
+
+.accordion:after {
+  content: "\02795";
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
+  color: black;
 }
