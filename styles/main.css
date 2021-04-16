@@ -11,6 +11,10 @@ main {
   margin: 0 auto;
 }
 
+.padding-medium {
+  padding: 20px;
+}
+
 .sections > div {
   margin-top: 40px;
 }
