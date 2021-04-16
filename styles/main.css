@@ -105,16 +105,18 @@ a {
 /* Mobile Rules*/
 @media (max-width: 767px) {
   .primary-nav ul {
-    transition: transform 300ms;
+    transition: all 300ms;
     top: 64px;
     left: 0;
     width: 100%;
     position: absolute;
     background-color: gray;
     transform: translateX(-100vw);
+    opacity: 0;
   }
   .primary-nav ul.active {
     transform: translateX(0);
+    opacity: 1;
   }
   .primary-nav a {
     color: orange;
