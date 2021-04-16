@@ -6,6 +6,11 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .sections > div {
   margin-top: 40px;
 }
@@ -153,8 +158,9 @@ a {
   h2 {
     font-family: serif;
     font-size: 20px;
+    font-style: italic;
     margin: 0;
-    color: orange;
+    color: white;
     padding-left: 30px;
     padding-right: 30px;
   }
