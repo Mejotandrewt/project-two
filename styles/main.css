@@ -18,9 +18,9 @@ body {
 }
 
 .firstpic {
-  height: 100vh;
-  width: 50vw;
-  padding-bottom: 100px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 h1 {
@@ -170,6 +170,8 @@ a {
 
   .header {
     display: flex;
+    min-height: calc(100vh - 67px);
+    margin-bottom: 100px;
   }
 
   .header > * {
