@@ -2,7 +2,7 @@ body {
   margin: 0;
   color: white;
   background-color: black;
-  font-size: 16;
+  font-size: 16px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -30,21 +30,22 @@ body {
 }
 
 h1 {
-  font-size: 30;
+  font-size: 30px;
   font-family: serif;
   margin: 0;
   color: orange;
 }
 h2 {
-  font-family: serif;
-  font-size: 20;
+  font-family: sans-serif;
+  font-style: italic;
+  font-size: 16px;
   margin: 0;
-  color: orange;
+  color: white;
 }
 
 h3 {
   font-family: serif;
-  font-size: 20;
+  font-size: 20px;
   margin: 0;
   color: orange;
   text-align: center;
@@ -62,7 +63,7 @@ a {
   margin-top: 64px;
   border-top: 5px solid orange;
   background-color: black;
-  font-size: 10;
+  font-size: 10px;
 }
 
 .primary-nav {
@@ -139,7 +140,7 @@ a {
     height: auto;
   }
   h1 {
-    font-size: 30;
+    font-size: 30px;
     font-family: serif;
     margin: 0;
     color: orange;
@@ -149,7 +150,7 @@ a {
   }
   h2 {
     font-family: serif;
-    font-size: 20;
+    font-size: 20px;
     margin: 0;
     color: orange;
     padding-left: 30px;
