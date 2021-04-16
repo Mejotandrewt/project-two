@@ -305,7 +305,7 @@ the main things that this page is doing is adding the different kinds of styles 
 
 .active,
 .accordion:hover {
-  background-color: #ccc;
+  background-color: rgb(29, 29, 29);
 }
 
 .panel {
