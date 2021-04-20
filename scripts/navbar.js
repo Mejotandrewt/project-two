@@ -1,13 +1,11 @@
 var toggleButton = document.querySelector(".toggle");
 var links = document.querySelector(".links");
 
-function toggle(){
-    links.classList.toggle("active")
+function toggle() {
+  links.classList.toggle("active");
 }
 
 toggleButton.addEventListener("click", toggle);
-
-
 
 /** Here is the link where I got the core code for these accordion sections 
  * https://www.w3schools.com/howto/howto_js_accordion.asp. This javascript is
@@ -23,11 +21,9 @@ var acc = document.getElementsByClassName("accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-   
+  acc[i].addEventListener("click", function () {
     this.classList.toggle("active");
 
-    
     var panel = this.nextElementSibling;
     if (panel.style.display === "block") {
       panel.style.display = "none";
@@ -36,4 +32,3 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
-
